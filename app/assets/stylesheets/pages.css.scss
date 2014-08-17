@@ -1,0 +1,52 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  font-family: 'Orienta', sans-serif;
+  padding: 0px;
+}
+
+input {
+  height: 30px;
+  line-height: 30px;
+}
+
+$red: #7c1010;
+$h: 60px;
+
+.navbar-inner {
+  min-height: $h;
+}
+
+.navbar-inner a {
+  min-height: $h;
+  line-height: $h;
+}
+
+.active {
+  a {
+      color: $red;
+  }
+}
+
+a.brand {
+  color: $red;
+}
+
+h4 {
+  color: $red;
+}
+
+.main {
+  padding: 5px;
+}
+
+.footer {
+  margin-top: 20px;
+  img {
+      width: 66px;
+      height: 66px;
+  }
+  text-align: center;
+}
