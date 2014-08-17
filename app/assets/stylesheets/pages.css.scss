@@ -2,51 +2,125 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+$br : 10px;
+$yellow:#F1BE1A;
 body {
-  font-family: 'Orienta', sans-serif;
-  padding: 0px;
+    padding: 0px;
+}
+
+body, div.navbar {
+    background: none;
+    background-color: $yellow;
+    border: none;
+}
+
+.row {
+    background: #F4EFE9;
+}
+.right{
+  background-color: white;
 }
 
 input {
-  height: 30px;
-  line-height: 30px;
+    height: 30px;
+    line-height: 30px;
 }
 
-$red: #7c1010;
+$green: #0ad600;
 $h: 60px;
+$red : #8F1900;
 
 .navbar-inner {
-  min-height: $h;
+    min-height: $h;
 }
 
 .navbar-inner a {
-  min-height: $h;
-  line-height: $h;
+    min-height: $h;
+    line-height: $h;
+}
+
+div.header {
+    position: relative;
+    text-align: center;
+    .img{
+      top:0px;
+      border-radius: $br;
+      height: 188px;
+      position: relative;
+      z-index: 150;
+      img{
+        height: 188px;
+      }
+    }
+
+    h1.text{
+      top:0px;
+      position: relative;
+      z-index: 200;
+      margin-top: -130px;
+      margin-bottom: 60px;
+      font-size: 70px;
+      color:$red;
+      text-shadow: 2px 2px 4px white;
+    }
 }
 
 .active {
-  a {
-      color: $red;
-  }
+    a {
+        color: $red;
+    }
+}
+
+div.main-box .row{
+  border-radius: $br;
+  border:1px solid $red;
+}
+
+div.navbar {
+    text-align: center;
+    .navbar-nav {
+        float: none;
+        padding: 5px;
+        & > li {
+            background-color: #F4EFE9;
+            border-radius: $br;
+            float: none;
+            display: inline-block;
+            margin: 2px auto;
+            border:1px solid $red;
+            a {
+                padding: 20px 10px;
+            }
+        }
+    }
 }
 
 a.brand {
-  color: $red;
+    color: $red;
 }
 
 h4 {
-  color: $red;
+    color: $green;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 0px #333;
 }
 
 .main {
-  padding: 5px;
+    padding: 5px;
 }
 
 .footer {
-  margin-top: 20px;
-  img {
-      width: 66px;
-      height: 66px;
-  }
-  text-align: center;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.right {
+  border-radius: $br; 
+  height: 100%;
+    text-align: center;
+    img {
+        max-width: 100%;
+
+    }
 }

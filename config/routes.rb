@@ -1,9 +1,11 @@
 Kaarchi::Application.routes.draw do
-  get "pages/home"
-  get "pages/projet"
-  get "pages/demarches"
-  get "pages/travaux"
-  get "pages/contact"
+  get "home" => 'pages#home'
+  get "projet" => 'pages#projet'
+  get "demarches" => 'pages#demarches'
+  get "travaux" => 'pages#travaux'
+  get "contact" => 'pages#contact'
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

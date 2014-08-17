@@ -2,14 +2,22 @@
 <html>
 	<head>
 		<title>KA Archi</title>
-
 		<%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
 		<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
 		<%= csrf_meta_tags %>
 	</head>
 	<body>
+		<div class="header">
+			<div class="img"><img src="/assets/header.jpg" alt=""/></div>
+			<h1 class="text">KA ARCHI</h1>			
+		</div>
+		
 		<%= render 'layouts/top_menu' %>
-		<%= yield %>
+		<div class="container main-box">
+			<div class="row">
+				<%= yield %>
+			</div>
+		</div>
 		<%= render 'layouts/footer' %>
 	</body>
 </html>
